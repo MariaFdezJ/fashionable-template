@@ -1,0 +1,140 @@
+body{
+
+	background-color: #cccccc;
+}
+header{
+	background-color: white;
+	padding-right:1%;
+	padding-left:1%; 
+}
+main{
+
+	padding-right:1%;
+	padding-left:1%; 
+	/*border:dashed;
+	border-color: red;*/
+}
+footer{
+	background-color: white;
+	padding-right:1%;
+	padding-left:1%; 
+}
+
+header h1{
+	margin-bottom: 1%; 
+}
+header h5{
+	margin-top: 1%;
+}
+header .col-8{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+nav{
+	background-color: black;
+	margin: 5;
+	border-radius: 10px;
+	float:right;
+	padding: 2%;
+}
+nav > button{
+	background-color: black;
+	border:transparent;
+}
+nav > button > a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color:white;
+}
+
+nav > button > a:hover {
+	color: #cccccc;
+}
+footer .link-to-more{
+	float: right;
+}
+footer h4{
+	clear:both;
+	margin-bottom: 1px;
+}
+footer h5{
+	margin-top: 1px;
+}
+	
+td a.social-link{
+	text-decoration: none;
+	color:#808080;
+}
+
+td{
+	width: 16.67%;
+}
+.boxing{
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border:dashed;
+	border-color: red;
+}
+
+.row{
+
+}
+.col-1{
+	width: 8.33%;
+	display: inline;
+}
+.col-2{
+	width: 16.67%;
+	display: inline-block;
+}
+.col-4{
+	width: 33%;
+	display: inline-block;
+}
+.col-6{
+	width: 50%;
+	display: inline-block;
+}
+.col-8{
+	width: 66.67%;
+	display: inline-block;
+}
+.col-12{
+	width: 100%;
+	display: inline-block;
+}
+.title{
+	float: left;
+}
+.img-responsive{
+	min-width: 8.33%;
+	max-width: 100%;
+	/*border:dashed;
+	border-color: red;*/
+}
+
+.slider-img{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+.social-button{
+	display: inline-grid;
+	background-color: #595959;
+	border-color:transparent;
+	border-radius: 50px;
+	font-size: 25px;
+}
+.social-button > i{
+	color: white;
+}
+
+.link-to-more{
+	color:#e65c00;
+	text-decoration: none;
+
+}
+
+
