@@ -25,16 +25,15 @@ var slideCaptions = {
 	This is some text. This is some text. This is some text.</p>
 					</div>`	
 };
+var slideImages = {
+	0: "./images/slide/slide1.jpg",
+	1: "./images/slide/slide2.jpg",
+	2: "./images/slide/slide3.jpg",
+	3: "./images/slide/slide4.jpg",
+	4: "./images/slide/slide5.jpg",
+};
 
 
-$(document).ready(function() {
-	//Function when slide-selector changes
-	$('#slide-selector').change(function(){
-		changingCaption();
-	});
-});
-
-setInterval(changingSlide,4000);
 
 
 function changingSlide() {
@@ -47,11 +46,11 @@ function changingSlide() {
 		id=0;
 	}
 	$(`input[name=slideX][value= ${id}]`).attr('checked',true);
-	changingCaption();
+	changingCaptionImage();
 }
 
 //Function to automatically change slide every X time
-function changingCaption(){
+function changingCaptionImage(){
 	//Clean caption
 	$('#slide-caption').empty();
 	var id = $('input[name=slideX]:checked').val();
@@ -59,4 +58,18 @@ function changingCaption(){
 	
 	//Put new text to caption
 	$('#slide-caption').append(slideCaptions[id]);
+
+	//Put new img to slide
+	$('.slide-img').attr('src',slideImages[id]);
+
 }
+
+
+$(document).ready(function() {
+	setInterval(changingSlide,4000);
+	//Function when slide-selector changes
+	$('#slide-selector').change(function(){
+		changingCaptionImage();
+	});
+});
+

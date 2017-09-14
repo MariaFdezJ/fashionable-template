@@ -59,7 +59,8 @@ td a.social-link{
 	max-width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	/*border:dashed;
+	/*align-content: center;
+	border:dashed;
 	border-color: red;*/
 }
 .all-sides{
@@ -102,6 +103,7 @@ td a.social-link{
 .img-responsive{
 	min-width: 8.33%;
 	max-width: 100%;
+	/*max-height: 100%;*/
 	/*border:dashed;
 	border-color: red;*/
 }
@@ -117,7 +119,6 @@ td a.social-link{
 
 }
 .slide-img{
-	
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
@@ -139,6 +140,8 @@ td a.social-link{
 
 #slide{
 	position: relative;
+	max-height: 400px;
+	overflow: hidden;
 }
 #slide-selector{
 	position: absolute;
@@ -148,10 +151,13 @@ td a.social-link{
 #slide-caption{
 
 	position: absolute;
-	bottom: 0px;
-	left: 0px;
+	bottom: 20px;
+	left: 20px;
 	background-color: rgba(0, 0, 0, .75);
 	color: white;
+}
+#sign-button{
+	color:#e65c00;
 }
 #social-block{
 	background-color: white;
