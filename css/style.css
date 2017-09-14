@@ -11,14 +11,12 @@ main{
 
 	padding-right:1%;
 	padding-left:1%; 
-	/*border:dashed;
-	border-color: red;*/
+
 }
 footer{
-	background-color: white;
-	padding-right:1%;
-	padding-left:1%; 
+	color:#808080;
 }
+
 
 header h1{
 	margin-bottom: 1%; 
@@ -50,33 +48,24 @@ nav > button > a {
 nav > button > a:hover {
 	color: #cccccc;
 }
-footer .link-to-more{
-	float: right;
-}
-footer h4{
-	clear:both;
-	margin-bottom: 1px;
-}
-footer h5{
-	margin-top: 1px;
-}
+
 	
 td a.social-link{
 	text-decoration: none;
 	color:#808080;
 }
 
-td{
-	width: 16.67%;
-}
 .boxing{
 	max-width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	border:dashed;
-	border-color: red;
+	/*border:dashed;
+	border-color: red;*/
 }
-
+.all-sides{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
 .row{
 
 }
@@ -88,6 +77,9 @@ td{
 	width: 16.67%;
 	display: inline-block;
 }
+.col-3{
+	width: 25%;
+}
 .col-4{
 	width: 33%;
 	display: inline-block;
@@ -97,15 +89,15 @@ td{
 	display: inline-block;
 }
 .col-8{
-	width: 66.67%;
+	width: 66%;
 	display: inline-block;
 }
 .col-12{
 	width: 100%;
 	display: inline-block;
 }
-.title{
-	float: left;
+.gallery-two-rows{
+	display: inline-block;
 }
 .img-responsive{
 	min-width: 8.33%;
@@ -113,8 +105,19 @@ td{
 	/*border:dashed;
 	border-color: red;*/
 }
+.table-format{
+	display: table;
+}
+.table-data-format{
+	display: table-cell;
+}
+.link-to-more{
+	color:#e65c00;
+	text-decoration: none;
 
-.slider-img{
+}
+.slide-img{
+	
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
@@ -130,11 +133,45 @@ td{
 .social-button > i{
 	color: white;
 }
-
-.link-to-more{
-	color:#e65c00;
-	text-decoration: none;
-
+.title{
+	float: left;
 }
 
+#slide{
+	position: relative;
+}
+#slide-selector{
+	position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#slide-caption{
 
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, .75);
+	color: white;
+}
+#social-block{
+	background-color: white;
+	padding-right:1%;
+	padding-left:1%; 
+}
+#social-block .boxing .all-sides{
+	padding-bottom:5% ;
+}
+#social-block .link-to-more{
+	float: right;
+}
+#social-block h4{
+	clear:both;
+	margin-bottom: 1px;
+}
+#social-block h5{
+	margin-top: 1px;
+}
+
+#copyright-text{
+	padding: 20px 0px 20px 50px;
+}

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Fashionable</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/template.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,13 +30,29 @@
 	</header>
 
 	<main>
-		<div class="boxing">
-			<div id="slide" class="boxing">
-				<img class="img-responsive slider-img" src="http://via.placeholder.com/960x400">
+		<div class="boxing all-sides">
+			<div id="slide" class="boxing all-sides">
+				<img class="img-responsive slide-img" src="http://via.placeholder.com/960x400">
+				<form id="slide-selector">
+					<input type="radio" name="slideX" value=0 checked="true">
+					<input type="radio" name="slideX" value=1>
+					<input type="radio" name="slideX" value=2>
+					<input type="radio" name="slideX" value=3>
+					<input type="radio" name="slideX" value=4>
+				</form>
+				<div id="slide-caption" class="col-4">
+					<div class="boxing all-sides" >
+						<h3>Slide 1 Caption</h3>
+						<p>This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.</p>
+					</div>
+
+				</div>
+				
 				
 			</div>
 
-			<div class="boxing" id="info">
+			<div class="boxing all-sides" id="info">
 				<div class="row">
 
 					<div class="col-4">
@@ -65,121 +82,144 @@ This is some text. This is some text. This is some text.</p>
 				</div>
 			</div>
 
-			<div class="boxing" id="gallery">
+			<div class="boxing all-sides" id="gallery">
 				<h2>Latest From The Gallery</h2>
 				<div class="row">
-					<div class="col-8 big-img-gallery">
+					<div class="gallery-two-rows">
 						<img class="img-responsive" src="http://via.placeholder.com/568x250">
 					</div>
-					<div class="col-4">
+					<div class="gallery-two-rows">
 						<div>
-							<div class="col-1">
+							<div class="table-data-format">
 								<img class="img-responsive" src="http://via.placeholder.com/120x120">
 							</div>
-							<div class="col-1">
+							<div class="table-data-format">
 								<img class="img-responsive" src="http://via.placeholder.com/120x120">
 							</div>
-							<div class="col-1">
+							<div class="table-data-format">
 								<img class="img-responsive" src="http://via.placeholder.com/120x120">
 							</div>
 						</div>
-
 						<div>
-
-							<div class="col-1">
+							<div class="table-data-format">
 								<img class="img-responsive" src="http://via.placeholder.com/120x120">
 							</div>
-							<div class="col-1">
+							<div class="table-data-format">
 								<img class="img-responsive" src="http://via.placeholder.com/120x120">
 							</div>
-							<div class="col-1">
+							<div class="table-data-format">
 								<img class="img-responsive" src="http://via.placeholder.com/120x120">
 							</div>
 						</div>
 					</div>
+
+					
+	
 				</div>
 				
 			</div>
 		</div>
+
+		
 	</main>
-
-	<footer>
-		<div class="boxing">
+	<article id="social-block" >
+		<div class="boxing all-sides" >
 			<div class="row" >
-				<div class="col-4">
+				<div class="col-4 table-data-format">
+					<div class="boxing all-sides">
+						<h3>Newsletter</h3>
+						<div>
+							<p>This is some text. This is some text. This is some text.
+		This is some text. This is some text. This is some text.</p>
+							<form>
+								<input type="email" name="email-input" value="Enter Your Email Here">
+								<input type="submit" value="SIGN UP">
+							</form>
 
-					<h3>Newsletter</h3>
-					<p>This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.</p>
-					<form>
-						<input type="email" name="email-input" value="Enter Your Email Here">
-						<input type="submit" value="SIGN UP">
-					</form>
+							
+						</div>
 
-					<h3>Stay Social</h3>
-					<table id="social-table">
-						<tr>
-							<td>
-								<button class="social-button" id="linkedin"> 
-									<i class="fa fa-linkedin"></i>
-								</button>
-								<a class="social-link" href="#linkedin">LinkedIn</a>
-							</td>
-							<td>
-								<button class="social-button" id="pinterest"> 
-									<i class="fa fa-pinterest"></i>
-								</button>
-								<a class="social-link" href="#pinterest">Pinterest</a>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<button class="social-button" id="twitter"> 
-									<i class="fa fa-twitter"></i>
-								</button>
-								<a class="social-link" href="#twitter">Twitter</a>
-							</td>
-							<td>
-								<button class="social-button" id="rss">
-									<i class="fa fa-rss"></i>
-								</button> 
-								<a class="social-link" href="#rss">RSS Feed</a>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div class="col-4">
-					<h3>From The Blog</h3>
-					<div>
-						<h4>Blog Post Title</h4>
-						<h5>Posted by....</h5>
-						<p>This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.</p>
-						<a class="link-to-more" href="">Read More &#8811; </a>
+						<h3>Stay Social</h3>
+						<div>
+							<table id="social-table">
+								<tr>
+									<td>
+										<button class="social-button" id="linkedin"> 
+											<i class="fa fa-linkedin"></i>
+										</button>
+										<a class="social-link" href="#linkedin">LinkedIn</a>
+									</td>
+									<td>
+										<button class="social-button" id="pinterest"> 
+											<i class="fa fa-pinterest"></i>
+										</button>
+										<a class="social-link" href="#pinterest">Pinterest</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="social-button" id="twitter"> 
+											<i class="fa fa-twitter"></i>
+										</button>
+										<a class="social-link" href="#twitter">Twitter</a>
+									</td>
+									<td>
+										<button class="social-button" id="rss">
+											<i class="fa fa-rss"></i>
+										</button> 
+										<a class="social-link" href="#rss">RSS Feed</a>
+									</td>
+								</tr>
+							</table>
+						</div>
 					</div>
-					<div>
-						<h4>Blog Post Title</h4>
-						<h5>Posted by....</h5>
-						<p>This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.</p>
-						<a class="link-to-more" href="">Read More &#8811; </a>
-					</div>
-						
+					
 				</div>
-				<div class="col-4">
-					<h3>Latest From Twitter</h3>
-					<p>This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.</p>
-					<p>This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.</p>
-					<p>This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.</p>
-					<a class="link-to-more" href="">Sign up to our Twitter feed here &#8811;</a>
+				<div class="col-4 table-data-format">
+					<div class="boxing all-sides">
+						<h3>From The Blog</h3>
+						<div>
+							<h4>Blog Post Title</h4>
+							<h5>Posted by....</h5>
+							<p>This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.</p>
+							<a class="link-to-more" href="">Read More &#8811; </a>
+						</div>
+						<div>
+							<h4>Blog Post Title</h4>
+							<h5>Posted by....</h5>
+							<p>This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.</p>
+							<a class="link-to-more" href="">Read More &#8811; </a>
+						</div>
+					</div>	
+				</div>
+				<div class="col-4 table-data-format">
+					<div class="boxing all-sides">
+						<h3>Latest From Twitter</h3>
+						<div>
+						<p>This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.</p>
+						<p>This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.</p>
+						<p>This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.</p>
+						<a class="link-to-more" href="">Sign up to our Twitter feed here &#8811;</a>
+						</div>
+					</div>
 					
 				</div>
 
 			</div>
+
 		</div>
+	</article>
+	<footer>
+		
+		<div class="boxing">
+			<div id="copyright-text">Copyright &copy; 2013 Fashionable - All Rights Reserved</div>
+		</div>
+		
 	</footer>
 
 
