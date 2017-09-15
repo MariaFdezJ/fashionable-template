@@ -6,6 +6,7 @@ header{
 	background-color: white;
 	padding-right:1%;
 	padding-left:1%; 
+	min-height: 100px;
 }
 main{
 
@@ -34,6 +35,7 @@ nav{
 	border-radius: 10px;
 	float:right;
 	padding: 2%;
+
 }
 nav > button{
 	background-color: black;
@@ -43,6 +45,8 @@ nav > button > a {
 	text-transform: uppercase;
 	text-decoration: none;
 	color:white;
+	font-family: 'Glegoo', serif;
+	font-size: 1.2em;
 }
 
 nav > button > a:hover {
@@ -54,9 +58,11 @@ td a.social-link{
 	text-decoration: none;
 	color:#808080;
 }
-
-.boxing{
-	max-width: 80%;
+.external-box.outside{
+	max-width: 1000px;
+}
+.external-box{
+	max-width: 96%;
 	margin-left: auto;
 	margin-right: auto;
 	/*align-content: center;
@@ -98,11 +104,29 @@ td a.social-link{
 	display: inline-block;
 }
 .gallery-two-rows{
+	max-height: 250px;
+	overflow: hidden;
 	display: inline-block;
 }
+.gallery-two-rows.gallery1{
+	max-width: 586px;
+	padding-right: 4px;
+}
+.gallery-two-rows.gallery2{
+	max-width: 374px;
+}
+.top-gallery2-row{
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.bottom-gallery2-row{
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
 .img-responsive{
-	min-width: 8.33%;
+	/*min-width: 8.33%;*/
 	max-width: 100%;
+
 	/*max-height: 100%;*/
 	/*border:dashed;
 	border-color: red;*/
@@ -110,14 +134,23 @@ td a.social-link{
 .table-format{
 	display: table;
 }
+
+
 .table-data-format{
 	display: table-cell;
+}
+.table-data-format.gallery-img{
+	padding: 0px 1px;
+	max-height: 120px;
+	max-width: 120px;
+	overflow: hidden;
 }
 .link-to-more{
 	color:#e65c00;
 	text-decoration: none;
 
 }
+
 .slide-img{
 	margin-right: auto;
 	margin-left: auto;
@@ -129,13 +162,22 @@ td a.social-link{
 	background-color: #595959;
 	border-color:transparent;
 	border-radius: 50px;
-	font-size: 25px;
+	font-size: 1.5625em;
 }
 .social-button > i{
 	color: white;
 }
 .title{
+	font-family: 'Old Standard TT', serif;
+	font-size: 1.125em;
+	/*margin-top: -2px;*/
 	float: left;
+	min-width: 180px;
+}
+.subtitle{
+	font-family:  serif;
+	font-size: 0.8125em;
+
 }
 
 #slide{
@@ -149,7 +191,7 @@ td a.social-link{
     right: 0px;
 }
 #slide-caption{
-
+	padding: 0px 10px;
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
@@ -164,7 +206,7 @@ td a.social-link{
 	padding-right:1%;
 	padding-left:1%; 
 }
-#social-block .boxing .all-sides{
+#social-block .external-box .all-sides{
 	padding-bottom:5% ;
 }
 #social-block .link-to-more{
@@ -180,4 +222,10 @@ td a.social-link{
 
 #copyright-text{
 	padding: 20px 0px 20px 50px;
+}
+.social-paragraph{
+	font-size: 0.83em; 
+}
+.menu-button{
+	font-size: px;
 }

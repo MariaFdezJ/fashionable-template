@@ -6,17 +6,18 @@
 	<script type="text/javascript" src="./js/template.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Amiri|Glegoo:700" rel="stylesheet">
 </head>
 <body >
 	<header>
-		<div class="boxing">
+		<div class="external-box outside">
 			<div id="header-div" class="row">
 				<div class="title col-4">
 					<h1>Fashionable</h1>
-					<h5>Free PSD Website Template<h5>
+					<h5 class="subtitle">Free PSD Website Template<h5>
 				</div>
-				<div class="col-8">
-					<nav>
+				<div class="col-8 menu-nav">
+					<nav id="menu-options">
 						<button><a href="#">Homepage</a></button>
 						<button><a href="#">Style demo</a></button>
 						<button><a href="#">Full width</a></button>
@@ -24,14 +25,17 @@
 						<button><a href="#">Link text</a></button>
 					</nav>
 				</div>	
+				<!--<div class="col-1 menu-button">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>-->
 				
 			</div>
 		</div>
 	</header>
 
 	<main>
-		<div class="boxing all-sides">
-			<div id="slide" class="boxing all-sides">
+		<div class="external-box outside all-sides">
+			<div id="slide" class="external-box all-sides">
 				<img class="img-responsive slide-img" src="./images/slide/slide1.jpg">
 				<form id="slide-selector">
 					<input type="radio" name="slideX" value=0 checked="true">
@@ -41,10 +45,13 @@
 					<input type="radio" name="slideX" value=4>
 				</form>
 				<div id="slide-caption" class="col-4">
-					<div class="boxing all-sides" >
+					<div class="external-box all-sides" >
 						<h3>Slide 1 Caption</h3>
-						<p>This is some text. This is some text. This is some text.
-	This is some text. This is some text. This is some text.</p>
+						<p class="social-paragraph">This is some text. 
+						This is some text. This is some text. This is some text. 
+						This is some text. This is some text. This is some text. 
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.</p>
 					</div>
 
 				</div>
@@ -52,12 +59,12 @@
 				
 			</div>
 
-			<div class="boxing all-sides" id="info">
+			<div class="external-box all-sides" id="info">
 				<div class="row">
 
 					<div class="col-4">
 						<h2>Indonectetus facilis</h2>
-						<img class="img-responsive" src="./images/300x280a.jpg">
+						<img class="img-responsive" src="./images/info/300x280a.jpg">
 						<p>This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.</p>
 						<a class="link-to-more" href="">Continue Reading &#8811; </a>
@@ -65,7 +72,7 @@ This is some text. This is some text. This is some text.</p>
 
 					<div class="col-4">
 						<h2>Indonectetus facilis</h2>
-						<img class="img-responsive" src="./images/300x280b.jpg">
+						<img class="img-responsive" src="./images/info/300x280b.jpg">
 						<p>This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.</p>
 						<a class="link-to-more" href="">Continue Reading &#8811;</a>
@@ -73,7 +80,7 @@ This is some text. This is some text. This is some text.</p>
 
 					<div class="col-4">
 						<h2>Indonectetus facilis</h2>
-						<img class="img-responsive" src="./images/300x280c.jpg">
+						<img class="img-responsive" src="./images/info/300x280c.jpg">
 						<p>This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.</p>
 						<a class="link-to-more" href="#">Continue Reading &#8811; </a>
@@ -82,33 +89,33 @@ This is some text. This is some text. This is some text.</p>
 				</div>
 			</div>
 
-			<div class="boxing all-sides" id="gallery">
+			<div class="external-box all-sides" id="gallery">
 				<h2>Latest From The Gallery</h2>
 				<div class="row">
-					<div class="gallery-two-rows">
-						<img class="img-responsive" src="http://via.placeholder.com/568x250">
+					<div class="gallery-two-rows gallery1">
+						<img class="img-responsive" src="./images/gallery/gallery1.jpg">
 					</div>
-					<div class="gallery-two-rows">
-						<div>
-							<div class="table-data-format">
-								<img class="img-responsive" src="http://via.placeholder.com/120x120">
+					<div class="gallery-two-rows gallery2">
+						<div class="top-gallery2-row">
+							<div class="table-data-format gallery-img">
+								<img class="img-responsive" src="./images/gallery/gallery2.jpg">
 							</div>
-							<div class="table-data-format">
-								<img class="img-responsive" src="http://via.placeholder.com/120x120">
+							<div class="table-data-format gallery-img">
+								<img class="img-responsive" src="./images/gallery/gallery3.jpg">
 							</div>
-							<div class="table-data-format">
-								<img class="img-responsive" src="http://via.placeholder.com/120x120">
+							<div class="table-data-format gallery-img">
+								<img class="img-responsive" src="./images/gallery/gallery4.jpg">
 							</div>
 						</div>
-						<div>
-							<div class="table-data-format">
-								<img class="img-responsive" src="http://via.placeholder.com/120x120">
+						<div class="bottom-gallery2-row">
+							<div class="table-data-format gallery-img">
+								<img class="img-responsive" src="./images/gallery/gallery5.jpg">
 							</div>
-							<div class="table-data-format">
-								<img class="img-responsive" src="http://via.placeholder.com/120x120">
+							<div class="table-data-format gallery-img">
+								<img class="img-responsive" src="./images/gallery/gallery6.jpeg">
 							</div>
-							<div class="table-data-format">
-								<img class="img-responsive" src="http://via.placeholder.com/120x120">
+							<div class="table-data-format gallery-img">
+								<img class="img-responsive" src="./images/gallery/gallery7.jpg">
 							</div>
 						</div>
 					</div>
@@ -123,13 +130,13 @@ This is some text. This is some text. This is some text.</p>
 		
 	</main>
 	<article id="social-block" >
-		<div class="boxing all-sides" >
+		<div class="external-box outside all-sides" >
 			<div class="row" >
 				<div class="col-4 table-data-format">
-					<div class="boxing all-sides">
+					<div class="external-box all-sides">
 						<h3>Newsletter</h3>
 						<div>
-							<p>This is some text. This is some text. This is some text.
+							<p class="social-paragraph">This is some text. This is some text. This is some text.
 		This is some text. This is some text. This is some text.</p>
 							<form>
 								<input type="email" name="email-input" value="Enter Your Email Here">
@@ -176,33 +183,33 @@ This is some text. This is some text. This is some text.</p>
 					
 				</div>
 				<div class="col-4 table-data-format">
-					<div class="boxing all-sides">
+					<div class="external-box all-sides">
 						<h3>From The Blog</h3>
 						<div>
 							<h4>Blog Post Title</h4>
 							<h5>Posted by....</h5>
-							<p>This is some text. This is some text. This is some text.
+							<p class="social-paragraph">This is some text. This is some text. This is some text.
 	This is some text. This is some text. This is some text.</p>
 							<a class="link-to-more" href="">Read More &#8811; </a>
 						</div>
 						<div>
 							<h4>Blog Post Title</h4>
 							<h5>Posted by....</h5>
-							<p>This is some text. This is some text. This is some text.
+							<p class="social-paragraph">This is some text. This is some text. This is some text.
 	This is some text. This is some text. This is some text.</p>
 							<a class="link-to-more" href="">Read More &#8811; </a>
 						</div>
 					</div>	
 				</div>
 				<div class="col-4 table-data-format">
-					<div class="boxing all-sides">
+					<div class="external-box all-sides">
 						<h3>Latest From Twitter</h3>
 						<div>
-						<p>This is some text. This is some text. This is some text.
+						<p class="social-paragraph">This is some text. This is some text. This is some text. This is some text. This is some text. This is some text.
 	This is some text. This is some text. This is some text.</p>
-						<p>This is some text. This is some text. This is some text.
+						<p class="social-paragraph">This is some text. This is some text. This is some text. This is some text. This is some text. This is some text.
 	This is some text. This is some text. This is some text.</p>
-						<p>This is some text. This is some text. This is some text.
+						<p class="social-paragraph">This is some text. This is some text. This is some text. This is some text. This is some text. This is some text.
 	This is some text. This is some text. This is some text.</p>
 						<a class="link-to-more" href="">Sign up to our Twitter feed here &#8811;</a>
 						</div>
@@ -216,7 +223,7 @@ This is some text. This is some text. This is some text.</p>
 	</article>
 	<footer>
 		
-		<div class="boxing">
+		<div class="external-box outside">
 			<div id="copyright-text">Copyright &copy; 2013 Fashionable - All Rights Reserved</div>
 		</div>
 		

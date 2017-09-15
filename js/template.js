@@ -1,28 +1,43 @@
 var slideCaptions = {
 	0 : `<div class="boxing">
 						<h3>Slide 1 Caption</h3>
-						<p>This is some text. This is some text. This is some text.
-	This is some text. This is some text. This is some text.</p>
+						<p class="social-paragraph">This is some text. 
+						This is some text. This is some text. This is some text. 
+						This is some text. This is some text. This is some text. 
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.</p>
 					</div>`,
 	1 : `<div class="boxing">
 						<h3>Slide 2 Caption</h3>
-						<p>This is some text. This is some text. This is some text.
-	This is some text. This is some text. This is some text.</p>
+						<p class="social-paragraph">This is some text. 
+						This is some text. This is some text. This is some text. 
+						This is some text. This is some text. This is some text. 
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.</p>
 					</div>`,
 	2 : `<div class="boxing">
 						<h3>Slide 3 Caption</h3>
-						<p>This is some text. This is some text. This is some text.
-	This is some text. This is some text. This is some text.</p>
+						<p class="social-paragraph">This is some text. 
+						This is some text. This is some text. This is some text. 
+						This is some text. This is some text. This is some text. 
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.</p>
 					</div>`,
 	3 : `<div class="boxing">
 						<h3>Slide 4 Caption</h3>
-						<p>This is some text. This is some text. This is some text.
-	This is some text. This is some text. This is some text.</p>
+						<p class="social-paragraph">This is some text. 
+						This is some text. This is some text. This is some text. 
+						This is some text. This is some text. This is some text. 
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.</p>
 					</div>`,
 	4 : `<div class="boxing">
 						<h3>Slide 5 Caption</h3>
-						<p>This is some text. This is some text. This is some text.
-	This is some text. This is some text. This is some text.</p>
+						<p class="social-paragraph">This is some text. 
+						This is some text. This is some text. This is some text. 
+						This is some text. This is some text. This is some text. 
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.</p>
 					</div>`	
 };
 var slideImages = {
@@ -71,5 +86,23 @@ $(document).ready(function() {
 	$('#slide-selector').change(function(){
 		changingCaptionImage();
 	});
+
+
+	$( window ).resize(function() {
+		if($(window).width() < 625){
+  			$('.menu-nav').hide();
+  		}
+  		else{
+  			$('.menu-nav').show();
+  		}
+	});
+	if($(window).width() < 625){
+  			$('.menu-nav').hide();
+  		}
+  		else{
+  			$('.menu-nav').show();
+  		}
+
 });
+
 
