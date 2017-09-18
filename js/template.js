@@ -79,9 +79,7 @@ function changingCaptionImage(){
 
 }
 
-function showMenuDropDown(){
-	//$('#options-list').toggle();
-}
+
 
 $(document).ready(function() {
 	setInterval(changingSlide,4000);
@@ -90,10 +88,16 @@ $(document).ready(function() {
 		changingCaptionImage();
 	});
 
+	var options = $('#options-list');
 	$('.menu-button').click(function(){
-		showMenuDropDown();
-
+		options.slideToggle();
 	});
+
+	$( window ).resize(function() {
+		if($(window).width() >= 804 && options.is(':hidden')){
+			options.css('display','');
+  		}
+ 	});
 
 });
 
