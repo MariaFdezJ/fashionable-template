@@ -57,7 +57,7 @@ function changingSlide() {
 	//console.log(id);
 	$(`input[name=slideX][value= ${id}]`).attr('checked',false);
 	id++;
-	if(id ===5){
+	if(id >=4){
 		id=0;
 	}
 	$(`input[name=slideX][value= ${id}]`).attr('checked',true);
@@ -79,6 +79,9 @@ function changingCaptionImage(){
 
 }
 
+function showMenuDropDown(){
+	//$('#options-list').toggle();
+}
 
 $(document).ready(function() {
 	setInterval(changingSlide,4000);
@@ -87,22 +90,12 @@ $(document).ready(function() {
 		changingCaptionImage();
 	});
 
+	$('.menu-button').click(function(){
+		showMenuDropDown();
 
-	$( window ).resize(function() {
-		if($(window).width() < 625){
-  			$('.menu-nav').hide();
-  		}
-  		else{
-  			$('.menu-nav').show();
-  		}
 	});
-	if($(window).width() < 625){
-  			$('.menu-nav').hide();
-  		}
-  		else{
-  			$('.menu-nav').show();
-  		}
 
 });
+
 
 

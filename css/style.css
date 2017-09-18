@@ -1,3 +1,5 @@
+
+
 body{
 
 	background-color: #cccccc;
@@ -37,6 +39,27 @@ nav{
 	padding: 2%;
 
 }
+/*nav ul{
+	padding: 0px;
+}
+nav li{
+	background-color: black;
+	border:transparent;
+	padding: 2px 6px 3px 6px;
+	display: inline;
+}
+nav li > a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color:white;
+	font-family: 'Glegoo', serif;
+	font-size: 1em;
+}
+
+nav li > a:hover {
+	color: #cccccc;
+}
+*/
 nav > button{
 	background-color: black;
 	border:transparent;
@@ -52,7 +75,6 @@ nav > button > a {
 nav > button > a:hover {
 	color: #cccccc;
 }
-
 	
 td a.social-link{
 	text-decoration: none;
@@ -78,7 +100,7 @@ td a.social-link{
 }
 .col-1{
 	width: 8.33%;
-	display: inline;
+	display: inline-block;
 }
 .col-2{
 	width: 16.67%;
@@ -179,7 +201,25 @@ td a.social-link{
 	font-size: 0.8125em;
 
 }
+.social-paragraph{
+	font-size: 0.83em; 
+}
+.menu-button{
+	margin-top: 7%;
+	font-size: 2em;
+	float: right;
+	display: none;
+	color: black;
+	cursor: pointer; 
+}
 
+	
+a.menu-button:hover{
+	color: #cccccc;
+}
+.menu-button:visited{
+	color:black;
+}
 #slide{
 	position: relative;
 	max-height: 400px;
@@ -223,9 +263,32 @@ td a.social-link{
 #copyright-text{
 	padding: 20px 0px 20px 50px;
 }
-.social-paragraph{
-	font-size: 0.83em; 
+
+#options-list{
+	display: none;
+
+
 }
-.menu-button{
-	font-size: px;
+/*
+ul#options-list {
+  	list-style-type: none;
+}
+#options-list a{
+	text-decoration: none;
+}
+#options-list a:visited{
+	color: initial;
+}
+
+*/
+
+@media only screen and (max-width: 625px){
+	#menu-options{
+		display: none;
+	}
+	.menu-button{
+		display:block;
+	}
+	.menu-button:hover 
+
 }
