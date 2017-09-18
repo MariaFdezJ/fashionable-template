@@ -304,9 +304,17 @@ a.menu-button:hover{
 		width:100%;		
 		display: block;
 	}
+
 	#info .col-4 img{
 		display: block;
 		width:50%;
 		margin: auto;
+	}
+	#social-block .col-4{
+		width:100%;		
+		display: block;
+	}
+	footer #copyright-text{
+		padding: 0px;
 	}
 }
