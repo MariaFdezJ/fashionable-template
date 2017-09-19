@@ -49,27 +49,37 @@ var slideImages = {
 };
 
 
+function removeChecked(){
+	var inputs = document.getElementsByName("slideX");
 
+	$(`input[name=slideX]`).removeAttr('checked');
+	//$(`input[name=slideX]`).removeAttr('defaultChecked');
+}
 
-function changingSlide() {
-	//console.log('klk');
+function changingSlide(userChange) {
+	
 	var id = $('input[name=slideX]:checked').val();
-	//console.log(id);
-	$(`input[name=slideX][value= ${id}]`).attr('checked',false);
-	id++;
-	if(id >=4){
-		id=0;
+	//console.log('ID checked first: ' + id);
+	removeChecked();
+	
+	if(!userChange){
+		id++;
+		//console.log('ID checked before: ' + id);
+		if(id > "4" ){
+			id = "0";
+		}
 	}
+
 	$(`input[name=slideX][value= ${id}]`).attr('checked',true);
-	changingCaptionImage();
+	//$(`input[name=slideX][value= ${id}]`).attr('defaultChecked',true);
+	//console.log('ID checked: ' + id);
+	changingCaptionImage(id);
 }
 
 //Function to automatically change slide every X time
-function changingCaptionImage(){
+function changingCaptionImage(id){
 	//Clean caption
 	$('#slide-caption').empty();
-	var id = $('input[name=slideX]:checked').val();
-	// id = the value of the input who's name is slideX and that is checked 
 	
 	//Put new text to caption
 	$('#slide-caption').append(slideCaptions[id]);
@@ -82,10 +92,10 @@ function changingCaptionImage(){
 
 
 $(document).ready(function() {
-	setInterval(changingSlide,4000);
+	var automaticSlide = setInterval(function(){changingSlide(false)},4000);
 	//Function when slide-selector changes
-	$('#slide-selector').change(function(){
-		changingCaptionImage();
+	$('#slide-selector').change(function(){		
+		changingSlide(true);
 	});
 
 	var options = $('#options-list');

@@ -1,5 +1,4 @@
 body{
-
 	background-color: #cccccc;
 }
 header{
@@ -30,7 +29,7 @@ td a.social-link{
 	text-decoration: none;
 	color:#808080;
 }
-.external-box.outside{
+.external-box.outside{/*like container*/
 	max-width: 1000px;
 }
 .external-box{
@@ -46,7 +45,7 @@ td a.social-link{
 	margin-bottom: 15px;
 }
 .row{
-
+	
 }
 .col-1{
 	width: 8.33%;
@@ -99,7 +98,6 @@ td a.social-link{
 	/*min-width: 8.33%;*/
 	max-width: 100%;
 
-	/*max-height: 100%;*/
 	/*border:dashed;
 	border-color: red;*/
 }
@@ -140,14 +138,14 @@ td a.social-link{
 	color: white;
 }
 .title{
-	font-family: 'Old Standard TT', serif;
+
 	font-size: 1.125em;
 	/*margin-top: -2px;*/
 	float: left;
 	min-width: 180px;
 }
 .subtitle{
-	font-family:  serif;
+
 	font-size: 0.8125em;
 
 }
@@ -194,6 +192,9 @@ td a.social-link{
 #social-block .link-to-more{
 	float: right;
 }
+#social-block h3{
+	font-style: italic; 
+}
 #social-block h4{
 	clear:both;
 	margin-bottom: 1px;
@@ -211,7 +212,7 @@ td a.social-link{
 	width: 66%;
 	display: inline-block;
 	margin-top: 2%;
-	margin-right: 1%;;
+	margin-right: 1%;
 	margin-bottom: 2%;
 
 }
