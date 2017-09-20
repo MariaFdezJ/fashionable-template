@@ -1,44 +1,41 @@
-function changingSlide(userChange) {
-	
-	var id = $('input[name=slideX]:checked').val();
+function changingSlide() {
+	var buttons = $('input[name=slideX]');
+	var index = buttons.index(buttons.filter(':checked'));
 
-	if(!userChange){
-		id++;
-		if(id > "4" ){
-			id = "0";
-		}
+	var inputLength = buttons.length;
+
+	if(index + 1 === inputLength) {
+		index = 0;
 	}
+	else{
+		index++;
+	}
+	var filterAttr = ':eq(' + index + ')';
 
-	$(`input[name=slideX][value= ${id}]`).prop('checked',true);
-
-
-	changingCaptionImage(id);
+	$('input[name=slideX]' + filterAttr).trigger('click');
 }
 
 
-function changingCaptionImage(id){
-	//$('input[name=slideX]:checked').val();
+function changingCaptionImage(){
+	
 	$('.carrusel.show').removeClass('show');
-	id++;
-	var childName = ':nth-child(' + (id) + ')';
-	$('.carrusel' + childName).addClass('show');
+		
+	var index = $('input[name=slideX]:checked').index();
+	var filterAttr = ':eq(' + index + ')';
+
+	$('.carrusel' + filterAttr).addClass('show');
 
 }
 
-function updateInterval() {
-	return setInterval(function(){changingSlide(false)},4000);
-}
 
 $(document).ready(function() {
-	var automaticSlide = updateInterval();
 
-
+	setInterval(changingSlide,4000);
+	
 	$('#slide-selector').change(function(){
-		clearInterval(automaticSlide);		
-		changingSlide(true);
-		automaticSlide = updateInterval();
+		changingCaptionImage();
 	});
-
+	
 	var options = $('#options-list');
 	$('.menu-button').click(function(){
 		options.slideToggle();
@@ -51,6 +48,3 @@ $(document).ready(function() {
  	});
 
 });
-
-
-
