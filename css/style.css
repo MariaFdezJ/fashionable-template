@@ -300,6 +300,31 @@ a.menu-button:hover{
 	color: #cccccc;
 }
 
+@media only screen and (max-width: 1035px){
+
+	.gallery-two-rows.gallery1{
+		width:100%;
+		max-width: 1035px;
+	}
+	.img-gallery1{
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.gallery-two-rows.gallery2{
+		display: -webkit-flex;
+		display:         flex;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+
+		width: 100%;
+		max-width: 1035px;
+
+	}	
+
+}
 
 @media only screen and (max-width: 804px){
 	.menu-nav{
@@ -321,12 +346,6 @@ a.menu-button:hover{
 	}
 	.menu-button{
 		display:block;
-	}
-}
-
-@media only screen and (max-width: 625px){
-	#slide-caption{
-		display: none;
 	}
 }
 
@@ -353,3 +372,9 @@ a.menu-button:hover{
 		padding: 0px;
 	}
 }
+@media only screen and (max-width: 625px){
+	#slide-caption{
+		display: none;
+	}
+}
+
