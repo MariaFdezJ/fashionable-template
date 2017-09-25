@@ -82,7 +82,13 @@ header h5{
 	text-decoration: none;
 
 }
+.link-to-more-div{
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
 
+}
 
 /*HEADER STUFF*/
 /*---------------------------*/
@@ -106,10 +112,9 @@ header h5{
 	margin-right: 1%;
 	margin-bottom: 2%;
 
+
 }
 nav{
-	
-
 	background-color: black;
 	color: white;
 	margin: 5px;
@@ -264,6 +269,7 @@ a.option-link:hover{
 	border-color:transparent;
 	border-radius: 50px;
 	font-size: 1.5625em;
+	cursor: pointer; 
 }
 .social-button > i{
 	color: white;
@@ -289,7 +295,7 @@ a.option-link:hover{
 	padding-bottom:5% ;
 }
 #social-block .link-to-more{
-	float: right;
+	/*float: right;*/
 }
 #social-block h3{
 	font-style: italic; 
@@ -307,7 +313,7 @@ a.option-link:hover{
 /*FOOTER STUFF*/
 /*---------------------------*/
 #copyright-text{
-	padding: 20px 0px 20px 50px;
+	padding: 0 2% 2px;
 }
 /*---------------------------*/
 
@@ -350,13 +356,16 @@ a.option-link:hover{
 @media only screen and (max-width: 804px){
 	.menu-nav{
 		width: 104px;
-		margin-top: 8%;
+		min-height: 25px;
+		margin: 38px 20px;
 		position: relative;
 	}
 	nav{
 		width: 100px;
-		/*position: absolute;
-		z-index: 1;*/
+		position: absolute;
+		z-index: 1;
+		margin: 0;
+		padding: 0;
 	}
 	.menu-bar-list{
 		display: none;
@@ -364,18 +373,6 @@ a.option-link:hover{
 	.menu-button-list{
 		display: block;
 	}
-
-	
-
-	/*
-	#options-list {
-		display: none;
-	}
-	.option-item	{
-		display: block;
-		text-align: center;
-	}
-	*/
 }
 
 @media only screen and (max-width: 705px){
@@ -397,9 +394,9 @@ a.option-link:hover{
 		width:100%;		
 		display: block;
 	}
-	footer #copyright-text{
+	/*footer #copyright-text{
 		padding: 0px;
-	}
+	}*/
 }
 @media only screen and (max-width: 625px){
 	#slide-caption{
