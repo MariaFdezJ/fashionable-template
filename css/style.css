@@ -130,6 +130,7 @@ nav{
 	padding: 0px;
 	margin: 0px;
 	list-style-type: none;
+	
 }
 
 .option-item,
@@ -146,7 +147,11 @@ a.option-link {
 
 
 #options-button-list{
+	background-color: black;
 	display: none;
+	position: absolute;
+	right: 0;
+	width: 100px;
 }
 .option-item-button{
 	display: block;
@@ -154,6 +159,7 @@ a.option-link {
 }
 .menu-button-list{
 	display: none;
+	position: relative;
 }
 .menu-button-div{
 	display: -webkit-flex; /* Safari */
@@ -353,19 +359,20 @@ a.option-link:hover{
 }
 
 
-@media only screen and (max-width: 804px){
+@media only screen and (max-width: 820px){
 	.menu-nav{
-		width: 104px;
+		width: 25px;
 		min-height: 25px;
 		margin: 38px 20px;
 		position: relative;
 	}
 	nav{
-		width: 100px;
+		width: 22px;
 		position: absolute;
 		z-index: 1;
 		margin: 0;
 		padding: 0;
+		border-radius: 0;
 	}
 	.menu-bar-list{
 		display: none;
@@ -394,9 +401,6 @@ a.option-link:hover{
 		width:100%;		
 		display: block;
 	}
-	/*footer #copyright-text{
-		padding: 0px;
-	}*/
 }
 @media only screen and (max-width: 625px){
 	#slide-caption{
