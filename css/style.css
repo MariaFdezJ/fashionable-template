@@ -3,16 +3,14 @@ body{
 }
 header{
 	background-color: white;
-	padding-right:1%;
-	padding-left:1%; 
 	min-height: 100px;
 }
+
+header,
 main{
-
-	padding-right:1%;
-	padding-left:1%; 
-
+	padding: 0 1%;
 }
+
 footer{
 	color:#808080;
 }
@@ -26,13 +24,8 @@ header h5{
 	margin-top: 1%;
 }
 
-td a.social-link{
-	text-decoration: none;
-	color:#808080;
-}
 
 
-/*---------------------------*/
 .external-box.outside{/*like container*/
 	max-width: 1000px;
 }
@@ -81,9 +74,152 @@ td a.social-link{
 	display: inline-block;
 }
 
+.img-responsive{
+	max-width: 100%;
+}
+.link-to-more{
+	color:#e65c00;
+	text-decoration: none;
+
+}
 
 
+/*HEADER STUFF*/
+/*---------------------------*/
+.title{
 
+	font-size: 1.125em;
+	/*margin-top: -2px;*/
+	float: left;
+	min-width: 180px;
+}
+.subtitle{
+
+	font-size: 0.8125em;
+
+}
+.menu-nav{
+	float: right;
+	width: 66%;
+	display: inline-block;
+	margin-top: 2%;
+	margin-right: 1%;
+	margin-bottom: 2%;
+
+}
+nav{
+	
+
+	background-color: black;
+	color: white;
+	margin: 5px;
+	border-radius: 10px;
+	float:right;
+	padding: 2%;
+	text-transform: uppercase;
+	font-family: 'Glegoo', serif;
+	font-size: 0.89em;
+}
+#options-list,
+#options-button-list{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.option-item,
+.option-item-button{
+	padding: 2px 6px 3px 6px;
+	display: inline;
+}
+
+a.option-link {
+	color: white;
+	text-decoration: none;
+	
+}
+
+
+#options-button-list{
+	display: none;
+}
+.option-item-button{
+	display: block;
+	text-align: center;
+}
+.menu-button-list{
+	display: none;
+}
+.menu-button-div{
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
+}
+.menu-button{
+	text-decoration: none;
+	/*text-align: center;*/
+	cursor: pointer; 
+}
+
+a.option-link:visited,
+a.menu-button:visited{
+	color: inherit;
+}
+
+a.menu-button:hover,
+a.option-link:hover{
+	color: #cccccc;
+}
+/*---------------------------*/
+
+/*SLIDE - CARRUSEL STUFF*/
+/*---------------------------*/
+.slide-img{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+#slide{
+	position: relative; /*to be able to put radio buttons and caption on top*/
+	max-height: 400px;
+	overflow: hidden;
+}
+#slide-selector{
+	position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#slide-caption{
+	padding: 0px 10px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	background-color: rgba(0, 0, 0, .75);
+	color: white;
+}
+.carrusel{
+	display: none;
+}
+.carrusel.show{
+	display: block;
+}
+/*---------------------------*/
+
+
+/*INFO STUFF*/
+/*---------------------------*/
+#info .row{
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
+}
+/*---------------------------*/
+
+
+/*GALLERY STUFF*/
+/*---------------------------*/
 .gallery-two-rows{
 	max-height: 250px;
 	overflow: hidden;
@@ -104,15 +240,10 @@ td a.social-link{
 	margin-top: 5px;
 	margin-bottom: 0px;
 }
-
-
-/*---------------------------*/
-.img-responsive{
-	max-width: 100%;
-}
 /*---------------------------*/
 
-
+/*SOCIAL BLOCK STUFF*/
+/*---------------------------*/
 .table-format{
 	display: table;
 }
@@ -127,22 +258,6 @@ td a.social-link{
 	max-width: 120px;
 	overflow: hidden;
 }
-
-.link-to-more{
-	color:#e65c00;
-	text-decoration: none;
-
-}
-
-/*---------------------------*/
-.slide-img{
-	margin-right: auto;
-	margin-left: auto;
-	display: block;
-}
-/*---------------------------*/
-
-
 .social-button{
 	display: inline-grid;
 	background-color: #595959;
@@ -153,56 +268,14 @@ td a.social-link{
 .social-button > i{
 	color: white;
 }
-.title{
-
-	font-size: 1.125em;
-	/*margin-top: -2px;*/
-	float: left;
-	min-width: 180px;
-}
-.subtitle{
-
-	font-size: 0.8125em;
-
+.social-link{
+	text-decoration: none;
+	color:#808080;
 }
 
-/*---------------------------*/
 .social-paragraph{
 	font-size: 0.83em; 
 }
-/*---------------------------*/
-
-
-
-#info .row{
-	display: -webkit-flex; /* Safari */
-    -webkit-justify-content: space-around; /* Safari 6.1+ */
-    display: flex;
-    justify-content: space-around;
-}
-
-
-/*---------------------------*/
-#slide{
-	position: relative; /*to be able to put radio buttons and caption on top*/
-	max-height: 400px;
-	overflow: hidden;
-}
-#slide-selector{
-	position: absolute;
-    top: 0px;
-    right: 0px;
-}
-#slide-caption{
-	padding: 0px 10px;
-	position: absolute;
-	bottom: 20px;
-	left: 20px;
-	background-color: rgba(0, 0, 0, .75);
-	color: white;
-}
-/*---------------------------*/
-
 
 #sign-button{
 	color:#e65c00;
@@ -228,77 +301,18 @@ td a.social-link{
 #social-block h5{
 	margin-top: 1px;
 }
+/*---------------------------*/
 
+
+/*FOOTER STUFF*/
+/*---------------------------*/
 #copyright-text{
 	padding: 20px 0px 20px 50px;
 }
-
-.menu-nav{
-	float: right;
-	width: 66%;
-	display: inline-block;
-	margin-top: 2%;
-	margin-right: 1%;
-	margin-bottom: 2%;
-
-}
-
-nav{
-
-	background-color: black;
-	color: white;
-	margin: 5;
-	border-radius: 10px;
-	float:right;
-	padding: 2%;
-	text-transform: uppercase;
-	font-family: 'Glegoo', serif;
-	font-size: 0.89em;
-}
-#options-list{
-
-	padding: 0px;
-	margin: 0px;
-	list-style-type: none;
-	
-}
-.option-item{
-	padding: 2px 6px 3px 6px;
-	display: inline;
-}
-a.option-link {
-	color: white;
-	text-decoration: none;
-	
-}
-a.option-link:visited{
-	color: inherit;
-}
+/*---------------------------*/
 
 
-a.option-link:hover {
-	color: #cccccc;
-}
 
-.carrusel{
-	display: none;
-}
-.carrusel.show{
-	display: block;
-}
-
-.menu-button{
-	text-decoration: none;
-	text-align: center;
-	display: none;
-	cursor: pointer; 
-}
-a.menu-button:visited{
-	color:inherit;
-}
-a.menu-button:hover{
-	color: #cccccc;
-}
 
 @media only screen and (max-width: 1035px){
 
@@ -323,30 +337,45 @@ a.menu-button:hover{
 		max-width: 1035px;
 
 	}	
+	.top-gallery2-row{
+		margin-bottom: 0;
+	}
+	.bottom-gallery2-row{
+		margin-top: 0;
+	}
 
 }
 
+
 @media only screen and (max-width: 804px){
 	.menu-nav{
-		width: 100px;
+		width: 104px;
 		margin-top: 8%;
 		position: relative;
 	}
 	nav{
 		width: 100px;
-		position: absolute;
-		z-index: 1;
+		/*position: absolute;
+		z-index: 1;*/
+	}
+	.menu-bar-list{
+		display: none;
+	}
+	.menu-button-list{
+		display: block;
+	}
+
+	
+
+	/*
+	#options-list {
+		display: none;
 	}
 	.option-item	{
 		display: block;
 		text-align: center;
 	}
-	#options-list {
-		display: none;
-	}
-	.menu-button{
-		display:block;
-	}
+	*/
 }
 
 @media only screen and (max-width: 705px){

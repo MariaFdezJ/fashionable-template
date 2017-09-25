@@ -4,12 +4,8 @@ function changingSlide() {
 
 	var inputLength = buttons.length;
 
-	if(index + 1 === inputLength) {
-		index = 0;
-	}
-	else{
-		index++;
-	}
+	index = (index === inputLength - 1 ) ? 0 : index + 1;
+
 	var filterAttr = ':eq(' + index + ')';
 
 	$('input[name=slideX]' + filterAttr).trigger('click');
@@ -36,15 +32,10 @@ $(document).ready(function() {
 		changingCaptionImage();
 	});
 	
-	var options = $('#options-list');
+	var options = $('#options-button-list');
+	
 	$('.menu-button').click(function(){
 		options.slideToggle();
 	});
-
-	$( window ).resize(function() {
-		if($(window).width() >= 804 && options.is(':hidden')){
-			options.css('display','');
-  		}
- 	});
 
 });
