@@ -42,34 +42,35 @@ header h5{
 	/*???*/
 }
 
-.col-1{
+.col-1{/* width: calc(1/12 * 100%);*/
 	width: 8.33%;
 	display: inline-block;
 }
-.col-2{
+.col-2{/* width: calc(2/12 * 100%);*/
 	width: 16.67%;
 	display: inline-block;
 }
-.col-3{
+.col-3{/* width: calc(3/12 * 100%);*/
 	width: 25%;
 
 }
-
-.col-4{
+.col-4{/* width: calc(4/12 * 100%);*/
 	width: 33%;
 	display: inline-block;
 }
-.col-6{
+.col-6{/* width: calc(6/12 * 100%);*/
 	width: 50%;
 	display: inline-block;
 }
-
-.col-8{
+.col-8{/* width: calc(8/12 * 100%);*/
 	width: 66%;
 	display: inline-block;
 }
-
-.col-12{
+.col-10{/* width: calc(10/12 * 100%);*/
+	width: 83.33%;
+	display: inline-block;
+}
+.col-12{/* width: calc(12/12 * 100%);*/
 	width: 100%;
 	display: inline-block;
 }
@@ -169,7 +170,6 @@ a.option-link {
 }
 .menu-button{
 	text-decoration: none;
-	/*text-align: center;*/
 	cursor: pointer; 
 }
 
@@ -283,6 +283,8 @@ a.option-link:hover{
 .social-link{
 	text-decoration: none;
 	color:#808080;
+	cursor: pointer; 
+
 }
 
 .social-paragraph{
@@ -299,9 +301,6 @@ a.option-link:hover{
 }
 #social-block .external-box .all-sides{
 	padding-bottom:5% ;
-}
-#social-block .link-to-more{
-	/*float: right;*/
 }
 #social-block h3{
 	font-style: italic; 
