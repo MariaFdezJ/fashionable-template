@@ -26,6 +26,12 @@ Dinner | 6:30
 
 [This is a link to GitHub's YouTube account](https://www.youtube.com/user/GitHubGuides)
 
+[Other links 1][1]
+
+[Other links 2][2]
+
+[Tutorial link[3]
+
 ### Some code on javascript
 ```javascript
 var a = "This is ok";
@@ -40,3 +46,6 @@ Finally, as someone probably said someday:
 > I'm done! - Someone
 
 
+[1]:http://spec.commonmark.org/dingus/
+[2]:http://commonmark.org/help/
+[3]:http://commonmark.org/help/tutorial/
