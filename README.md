@@ -30,7 +30,7 @@ Dinner | 6:30
 
 [Other links 2][2]
 
-[Tutorial link[3]
+[Tutorial link][3]
 
 ### Some code on javascript
 ```javascript
