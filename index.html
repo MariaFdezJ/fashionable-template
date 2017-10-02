@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fashionable</title>
@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body >
-	<header>
+	<header role="banner">
 		<div class="external-box outside">
 			<div class="row">
 				<div class="title col-4">
@@ -16,7 +16,7 @@
 					<h5 class="subtitle">Free PSD Website Template<h5>
 				</div>
 				<div class="menu-nav" id="menu-options">				
-					<nav>
+					<nav role="navigation">
 						<div class="menu-bar-list">
 							<ul id="options-list">
 								<li class="option-item"><a class="option-link" href="#">Homepage</a></li>
@@ -26,14 +26,19 @@
 								<li class="option-item"><a class="option-link" href="#">Link text</a></li>
 							</ul>
 						</div>
-						<div class="menu-button-list">
-							<div class="menu-button-div">
+						<div class="menu-button-list" >
+							<button class="menu-button" aria-label="Menu button">
+								<i class="fa fa-bars" aria-hidden="true" ></i>	
+							</button>
+							<!--
+							<div class="menu-button-div menu-button">
 								<a href="#" class="menu-button">
-									
+
 									<i class="fa fa-bars" aria-hidden="true" ></i>	
 								</a>
+								
 							</div>
-							
+							-->
 							<ul id="options-button-list">
 								<li class="option-item-button"><a class="option-link" href="#">Homepage</a></li>
 								<li class="option-item-button"><a class="option-link" href="#">Style demo</a></li>
@@ -50,84 +55,85 @@
 		</div>
 	</header>
 
-	<main>
+	<main role="main">
 		<div class="external-box outside all-sides">
 			<div id="slide" class="external-box all-sides">
-				<form id="slide-selector">
-					<input type="radio" name="slideX" value="" defautlChecked="true" checked="true">
-					<input type="radio" name="slideX" value="">
-					<input type="radio" name="slideX" value="">
-					<input type="radio" name="slideX" value="">
-					<input type="radio" name="slideX" value="">
+				<p hidden="true" id="sliderButtonsName">Slider image selector</p>
+				<form id="slide-selector" aria-label="Slider image selectors">
+					<input type="radio" name="slideX" value="" aria-labelledby="sliderButtonsName" defautlChecked="true" checked="true">
+					<input type="radio" name="slideX" value="" aria-labelledby="sliderButtonsName">
+					<input type="radio" name="slideX" value="" aria-labelledby="sliderButtonsName">
+					<input type="radio" name="slideX" value="" aria-labelledby="sliderButtonsName">
+					<input type="radio" name="slideX" value="" aria-labelledby="sliderButtonsName">
 				</form>
 				<div>
 					<div class="carrusel show">
 						<img class="img-responsive slide-img" alt="Carrusel's image" src="./images/slide/slide1.jpg">
 						
-						<div id="slide-caption" class="col-4">
+						<div class="col-4 slide-caption">
 							<div class="external-box all-sides" >
 								<h3>Slide 1 Caption</h3>
 								<p class="social-paragraph">This is some text. 
-								This is some text. This is some text. This is some text. 
-								This is some text. This is some text. This is some text. 
-								This is some text. This is some text. This is some text.
-								This is some text. This is some text. This is some text.</p>
+									This is some text. This is some text. This is some text. 
+									This is some text. This is some text. This is some text. 
+									This is some text. This is some text. This is some text.
+									This is some text. This is some text. This is some text.</p>
 							</div>
 						</div>
 					</div>				
 					<div class="carrusel">
 						<img class="img-responsive slide-img" alt="Carrusel's image" src="./images/slide/slide2.jpg">
 						
-						<div id="slide-caption" class="col-4">
+						<div class="col-4 slide-caption">
 							<div class="external-box all-sides" >
 								<h3>Slide 2 Caption</h3>
 								<p class="social-paragraph">This is some text. 
-								This is some text. This is some text. This is some text. 
-								This is some text. This is some text. This is some text. 
-								This is some text. This is some text. This is some text.
-								This is some text. This is some text. This is some text.</p>
+									This is some text. This is some text. This is some text. 
+									This is some text. This is some text. This is some text. 
+									This is some text. This is some text. This is some text.
+									This is some text. This is some text. This is some text.</p>
 							</div>
 						</div>
 					</div>				
 					<div class="carrusel">
 						<img class="img-responsive slide-img" alt="Carrusel's image" src="./images/slide/slide3.jpg">
 						
-						<div id="slide-caption" class="col-4">
+						<div class="col-4 slide-caption">
 							<div class="external-box all-sides" >
 								<h3>Slide 3 Caption</h3>
 								<p class="social-paragraph">This is some text. 
-								This is some text. This is some text. This is some text. 
-								This is some text. This is some text. This is some text. 
-								This is some text. This is some text. This is some text.
-								This is some text. This is some text. This is some text.</p>
+									This is some text. This is some text. This is some text. 
+									This is some text. This is some text. This is some text. 
+									This is some text. This is some text. This is some text.
+									This is some text. This is some text. This is some text.</p>
 							</div>
 						</div>
 					</div>				
 					<div class="carrusel">
 						<img class="img-responsive slide-img" alt="Carrusel's image" src="./images/slide/slide4.jpg">
 						
-						<div id="slide-caption" class="col-4">
+						<div class="col-4 slide-caption">
 							<div class="external-box all-sides" >
 								<h3>Slide 4 Caption</h3>
 								<p class="social-paragraph">This is some text. 
-								This is some text. This is some text. This is some text. 
-								This is some text. This is some text. This is some text. 
-								This is some text. This is some text. This is some text.
-								This is some text. This is some text. This is some text.</p>
+									This is some text. This is some text. This is some text. 
+									This is some text. This is some text. This is some text. 
+									This is some text. This is some text. This is some text.
+									This is some text. This is some text. This is some text.</p>
 							</div>
 						</div>
 					</div>
 					<div class="carrusel">
 						<img class="img-responsive slide-img" alt="Carrusel's image" src="./images/slide/slide5.jpg">
 						
-						<div id="slide-caption" class="col-4">
+						<div class="col-4 slide-caption">
 							<div class="external-box all-sides" >
 								<h3>Slide 5 Caption</h3>
 								<p class="social-paragraph">This is some text. 
-								This is some text. This is some text. This is some text. 
-								This is some text. This is some text. This is some text. 
-								This is some text. This is some text. This is some text.
-								This is some text. This is some text. This is some text.</p>
+									This is some text. This is some text. This is some text. 
+									This is some text. This is some text. This is some text. 
+									This is some text. This is some text. This is some text.
+									This is some text. This is some text. This is some text.</p>
 							</div>
 						</div>
 					</div>
@@ -142,7 +148,7 @@
 						<h2>Indonectetus facilis</h2>
 						<img class="img-responsive" alt="" src="./images/info/300x280a.jpg">
 						<p>This is some text. This is some text. This is some text.
-						This is some text. This is some text. This is some text.</p>
+							This is some text. This is some text. This is some text.</p>
 						<a class="link-to-more" href="">Continue Reading &#8811; </a>
 					</div>
 
@@ -150,7 +156,7 @@
 						<h2>Indonectetus facilis</h2>
 						<img class="img-responsive" alt="" src="./images/info/300x280b.jpg">
 						<p>This is some text. This is some text. This is some text.
-						This is some text. This is some text. This is some text.</p>
+							This is some text. This is some text. This is some text.</p>
 						<a class="link-to-more" href="">Continue Reading &#8811;</a>
 					</div>
 
@@ -158,7 +164,7 @@
 						<h2>Indonectetus facilis</h2>
 						<img class="img-responsive" alt="" src="./images/info/300x280c.jpg">
 						<p>This is some text. This is some text. This is some text.
-						This is some text. This is some text. This is some text.</p>
+							This is some text. This is some text. This is some text.</p>
 						<a class="link-to-more" href="#">Continue Reading &#8811; </a>
 					</div>
 		
@@ -206,7 +212,7 @@
 		
 	</main>
 
-	<article id="social-block" >
+	<section id="social-block" >
 		<div class="external-box outside all-sides" >
 			<div class="row" >
 				<div class="col-4 table-data-format">
@@ -214,11 +220,11 @@
 						<h3>Newsletter</h3>
 						<div>
 							<p class="social-paragraph">This is some text. This is some text. 
-							This is some text.This is some text. This is some text. 
-							This is some text.</p>
+								This is some text.This is some text. This is some text. 
+								This is some text.</p>
 							<form>
-								<input type="email" id="email-input" name="email-input" placeholder="Enter Your Email Here">
-								<input type="submit" id="sign-button" value="SIGN UP">
+								<input type="email" id="email-input" name="email-input" placeholder="Enter Your Email Here" aria-label="Email input for Newsletter">
+								<input type="submit" id="sign-button" value="SIGN UP" aria-label="Sign up button for Newsletter">
 							</form>
 
 							
@@ -229,14 +235,14 @@
 							<table id="social-table">
 								<tr>
 									<td>
-										<button class="social-button" id="linkedin"> 
+										<button class="social-button" id="linkedin" aria-label="LinkedIn"> 
 											<i class="fa fa-linkedin"></i>
 										</button>
 										<label class="social-link" for="linkedin">LinkedIn</label>
 										
 									</td>
 									<td>
-										<button class="social-button" id="pinterest"> 
+										<button class="social-button" id="pinterest" aria-label="Pinterest"> 
 											<i class="fa fa-pinterest"></i>
 										</button>
 										<label class="social-link" for="pinterest">Pinterest</label>
@@ -245,14 +251,14 @@
 								</tr>
 								<tr>
 									<td>
-										<button class="social-button" id="twitter"> 
+										<button class="social-button" id="twitter" aria-label="Twitter"> 
 											<i class="fa fa-twitter"></i>
 										</button>
 										<label class="social-link" for="twitter">Twitter</label>
 										
 									</td>
 									<td>
-										<button class="social-button" id="rss">
+										<button class="social-button" id="rss" aria-label="RSS Feed">
 											<i class="fa fa-rss"></i>
 										</button> 
 										<label class="social-link" for="rss">RSS Feed<label>
@@ -271,8 +277,8 @@
 							<h4>Blog Post Title</h4>
 							<h5>Posted by....</h5>
 							<p class="social-paragraph">This is some text. This is some text. 
-							This is some text. This is some text. This is some text. 
-							This is some text.</p>
+								This is some text. This is some text. This is some text. 
+								This is some text.</p>
 							<div class="link-to-more-div">
 								<a class="link-to-more" href="">Read More &#8811; </a>
 							</div>
@@ -281,8 +287,8 @@
 							<h4>Blog Post Title</h4>
 							<h5>Posted by....</h5>
 							<p class="social-paragraph">This is some text. This is some text. 
-							This is some text. This is some text. This is some text. 
-							This is some text.</p>
+								This is some text. This is some text. This is some text. 
+								This is some text.</p>
 							<div class="link-to-more-div">
 								<a class="link-to-more" href="">Read More &#8811; </a>
 							</div>
@@ -295,17 +301,17 @@
 						<h3>Latest From Twitter</h3>
 						<div>
 							<p class="social-paragraph">This is some text. This is some text. 
-							This is some text. This is some text. This is some text. 
-							This is some text. This is some text. This is some text. 
-							This is some text.</p>
+								This is some text. This is some text. This is some text. 
+								This is some text. This is some text. This is some text. 
+								This is some text.</p>
 							<p class="social-paragraph">This is some text. This is some text. 
-							This is some text. This is some text. This is some text. 
-							This is some text. This is some text. This is some text. 
-							This is some text.</p>
+								This is some text. This is some text. This is some text. 
+								This is some text. This is some text. This is some text. 
+								This is some text.</p>
 							<p class="social-paragraph">This is some text. This is some text. 
-							This is some text. This is some text. This is some text. 
-							This is some text. This is some text. This is some text. 
-							This is some text.</p>
+								This is some text. This is some text. This is some text. 
+								This is some text. This is some text. This is some text. 
+								This is some text.</p>
 							<div class="link-to-more-div">
 								<a class="link-to-more" href="">Sign up to our Twitter feed here &#8811;</a>
 							</div>
@@ -318,9 +324,9 @@
 			</div>
 
 		</div>
-	</article>
+	</section>
 
-	<footer>
+	<footer role="contentinfo">
 		
 		<div class="external-box outside">
 			<div id="copyright-text">Copyright &copy; 2013 Fashionable - All Rights Reserved</div>

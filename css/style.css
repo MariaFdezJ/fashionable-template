@@ -12,7 +12,7 @@ main{
 }
 
 footer{
-	color:#808080;
+	color:#4F4F4F;
 }
 
 
@@ -79,9 +79,12 @@ header h5{
 	max-width: 100%;
 }
 .link-to-more{
-	color:#e65c00;
+	color:#BD4B00;
 	text-decoration: none;
 
+}
+#info .link-to-more{
+	color:#8F3900;
 }
 .link-to-more-div{
 	display: -webkit-flex; /* Safari */
@@ -169,16 +172,21 @@ a.option-link {
     justify-content: space-around;
 }
 .menu-button{
-	text-decoration: none;
-	cursor: pointer; 
+	background-color: transparent;
+	color: white;
+	border: none;
+	cursor: pointer;
+	width: 30px;
+	/*text-decoration: none;
+	cursor: pointer; */
 }
 
 a.option-link:visited,
-a.menu-button:visited{
+.menu-button:visited{
 	color: inherit;
 }
 
-a.menu-button:hover,
+.menu-button:hover,
 a.option-link:hover{
 	color: #cccccc;
 }
@@ -201,7 +209,7 @@ a.option-link:hover{
     top: 0px;
     right: 0px;
 }
-#slide-caption{
+.slide-caption{
 	padding: 0px 10px;
 	position: absolute;
 	bottom: 20px;
@@ -282,7 +290,7 @@ a.option-link:hover{
 }
 .social-link{
 	text-decoration: none;
-	color:#808080;
+	color:#707070;
 	cursor: pointer; 
 
 }
@@ -292,7 +300,7 @@ a.option-link:hover{
 }
 
 #sign-button{
-	color:#e65c00;
+	color:#8F3900;
 }
 #social-block{
 	background-color: white;
@@ -366,7 +374,7 @@ a.option-link:hover{
 		position: relative;
 	}
 	nav{
-		width: 22px;
+		width: 27px;
 		position: absolute;
 		z-index: 1;
 		margin: 0;
@@ -402,7 +410,7 @@ a.option-link:hover{
 	}
 }
 @media only screen and (max-width: 625px){
-	#slide-caption{
+	.slide-caption{
 		display: none;
 	}
 }
