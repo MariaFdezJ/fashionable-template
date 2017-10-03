@@ -26,13 +26,13 @@ function changingCaptionImage(){
 
 $(document).ready(function() {
 
-	setInterval(changingSlide,4000);
+	//setInterval(changingSlide,4000);
 	
 	$('#slide-selector').change(function(){
 		changingCaptionImage();
 	});
 	
-	var options = $('#options-button-list');
+	var options = $('#options-dropdown-list');
 	
 	$('.menu-button').click(function(){
 		options.slideToggle();
