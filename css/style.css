@@ -226,6 +226,7 @@ nav{
 }
 .gallery.gallery2{
 	width: 40%;
+	display: flex-wrap;
 }
 .gallery1 .external-box{
 	margin-left:0;	
@@ -245,20 +246,7 @@ nav{
 
 /*SOCIAL BLOCK STUFF*/
 /*---------------------------*/
-.table-format{
-	display: table;
-}
 
-
-.table-data-format{
-	display: table-cell;
-}
-.table-data-format.gallery-img{
-	padding: 0px 1px;
-	max-height: 120px;
-	max-width: 120px;
-	overflow: hidden;
-}
 
 /*------CHECKED TOP------*/
 #social-table a{
@@ -272,7 +260,6 @@ nav{
 	background-color: #707070;
 	color: white;
 	padding: 10px; /*inside icon distance*/
-	/*margin-right: 10px; /*distance icon and text*/
 	border-radius: 25px; /*circle aspect*/
 
 	display: inline-flex;
@@ -301,9 +288,7 @@ nav{
 	padding-right:1%;
 	padding-left:1%; 
 }
-#social-block .external-box .all-sides{
-	padding-bottom:5% ;
-}
+
 #social-block h3{
 	font-style: italic; 
 }
@@ -330,37 +315,25 @@ nav{
 
 	.gallery.gallery1{
 		width:100%;
-		/*max-width: 1035px;*/
 		max-height: 404px;
+		display: flex;
+		justify-content: space-around;
 	}
 	.gallery1 .external-box{
 		margin-right: 0;
 	}
-	/*.img-gallery1{
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-	}*/
+
 	.gallery.gallery2{
 		width: 100%;
+		display: flex;
+		justify-content: space-around;
 	}
-	/*.gallery.gallery2{
-		display: -webkit-flex;
-		display:         flex;
-		-webkit-align-items: center;
-		align-items: center;
-		-webkit-justify-content: center;
-		justify-content: center;
-
-		width: 100%;
-		max-width: 1035px;
-
-	}	*/
 
 	.top-gallery2-row,
 	.bottom-gallery2-row{
-		margin: 0;
-		display: inline-block;
+		margin: 5px 0 0 0;
+		display: inline-flex;
+		justify-content: space-around;
 		width: 48%;
 	}
 
@@ -394,11 +367,27 @@ nav{
 	.options-list li{
 		display: block;
 	}
+	.gallery.gallery2{
+		width: 100%;
+		display: block;
+		
+	}
+
+	.top-gallery2-row,
+	.bottom-gallery2-row{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 765px){
 	.social-text{
-		visibility: hidden;
+		display:none;
+	}
+	#social-table{
+		display: flex;
+		justify-content: space-around;
 	}
 
 	#social-table > div{
@@ -409,7 +398,7 @@ nav{
 @media only screen and (max-width: 705px){
 	/*---------CHECKED TOP------------------*/
 	.social-text{
-		visibility: visible;
+		display: inline-flex;
 	}
 	#social-table > div{
 		width: 105px;
@@ -440,11 +429,18 @@ nav{
 }
 @media only screen and (max-width: 515px){
 	.social-text{
-		visibility: hidden;
+		display: none;
 	}
 	#social-table > div{
 		width: 38px;
 	}
 
+}
+@media only screen and (max-width: 415px){
+	.top-gallery2-row img:last-of-type,
+	.bottom-gallery2-row img:last-of-type
+	{
+		display: none;
+	}
 }
 
