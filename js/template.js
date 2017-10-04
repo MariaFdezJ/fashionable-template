@@ -14,19 +14,19 @@ function changingSlide() {
 
 function changingCaptionImage(){
 	
-	$('.carrusel.show').removeClass('show');
+	$('.carousel.show').removeClass('show');
 		
 	var index = $('input[name=slideX]:checked').index();
 	var filterAttr = ':eq(' + index + ')';
 
-	$('.carrusel' + filterAttr).addClass('show');
+	$('.carousel' + filterAttr).addClass('show');
 
 }
 
 
 $(document).ready(function() {
 
-	//setInterval(changingSlide,4000);
+	setInterval(changingSlide,4000);
 	
 	$('#slide-selector').change(function(){
 		changingCaptionImage();
