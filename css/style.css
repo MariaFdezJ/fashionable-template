@@ -272,7 +272,7 @@ nav{
 	background-color: #707070;
 	color: white;
 	padding: 10px; /*inside icon distance*/
-	margin-right: 10px; /*distance icon and text*/
+	/*margin-right: 10px; /*distance icon and text*/
 	border-radius: 25px; /*circle aspect*/
 
 	display: inline-flex;
@@ -280,8 +280,14 @@ nav{
 
 }
 /*------CHECKED BOTTOM------*/
-
-
+.social-text{
+	display: inline-flex;
+}
+#social-table > div{
+	display: inline-flex;
+	height: 38px;
+	width: 105px;
+}
 
 .social-paragraph{
 	font-size: 0.83em; 
@@ -318,13 +324,6 @@ nav{
 }
 /*---------------------------*/
 
-
-/*
-- 765px change to only icons
-- 705px change to icons and text AND in one single line
-- 515px change to only icons AND in one single line
-
-*/
 
 
 @media only screen and (max-width: 1035px){
@@ -397,10 +396,25 @@ nav{
 	}
 }
 
+@media only screen and (max-width: 765px){
+	.social-text{
+		visibility: hidden;
+	}
+
+	#social-table > div{
+		width: 38px;
+	}
+}
+
 @media only screen and (max-width: 705px){
-
-
 	/*---------CHECKED TOP------------------*/
+	.social-text{
+		visibility: visible;
+	}
+	#social-table > div{
+		width: 105px;
+	}
+
 	.info-column{
 		width:100%;		
 		display: block;
@@ -423,5 +437,14 @@ nav{
 	.slide-caption{
 		display: none;
 	}
+}
+@media only screen and (max-width: 515px){
+	.social-text{
+		visibility: hidden;
+	}
+	#social-table > div{
+		width: 38px;
+	}
+
 }
 
