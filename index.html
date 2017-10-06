@@ -10,12 +10,37 @@
 <body >
 	<header>
 		<div class="external-box">
-			<div class="row" id="header">
+			<div class="row">
 				<div class="col-4" id="title">
-					<h1 id="title-name">Fashionable</h1>
-					<h5 id="subtitle">Free PSD Website Template<h5>
+					<h1>Fashionable</h1>
+					<h5>Free PSD Website Template<h5>
 				</div>
-				<div class="menu-nav col-8"> <!--PERSONAL QUESTION: why div AND nav??-->		
+				<nav>
+					<div id="menu-bar-list">
+						<ul class="options-list">
+							<li><a href="#">Homepage</a></li>
+							<li><a href="#">Style demo</a></li>
+							<li><a href="#">Full width</a></li>
+							<li><a href="#">Dropdown</a></li>
+							<li><a href="#">Link text</a></li>
+						</ul>
+					</div>
+
+					<div id="menu-dropdown-list" >
+						<button class="menu-button" aria-label="Menu button">
+							<i class="fa fa-bars" aria-hidden="true" ></i>	
+						</button>
+						<ul class="options-list" id="options-dropdown-list">
+							<li><a href="#">Homepage</a></li>
+							<li><a href="#">Style demo</a></li>
+							<li><a href="#">Full width</a></li>
+							<li><a href="#">Dropdown</a></li>
+							<li><a href="#">Link text</a></li>
+						</ul>
+					</div>						
+				</nav>
+				<!--
+				<div class="menu-nav col-8"> 	
 					<nav>
 
 						<div id="menu-bar-list">
@@ -43,7 +68,7 @@
 					</nav>
 
 				</div>	
-
+				-->
 			</div>
 		</div>
 	</header>
@@ -52,7 +77,13 @@
 		<div class="external-box all-sides">
 			<section id="slide" class="external-box all-sides">
 				<p hidden="true" id="sliderButtonsName">Slider image selector</p><!--This is for WebAccessibility purpose-->
-				<!--CHANGE THIS FORM FOR A DIV-->
+
+				<!--CHANGE THIS FORM FOR A DIV AND INPUT RADIO FOR DIV-->
+				<div>
+					<div class="c"></div>
+					
+				</div>
+				<!--
 				<form id="slide-selector" aria-label="Slider image selectors">
 					<input type="radio" name="slideX" value="" aria-labelledby="sliderButtonsName" defautlChecked="true" checked="true">
 					<input type="radio" name="slideX" value="" aria-labelledby="sliderButtonsName">
@@ -60,6 +91,7 @@
 					<input type="radio" name="slideX" value="" aria-labelledby="sliderButtonsName">
 					<input type="radio" name="slideX" value="" aria-labelledby="sliderButtonsName">
 				</form>
+			-->
 				<div>
 					<div class="carousel show">
 						<img class="img-responsive" alt="Carousel's image 1" src="images/slide/slide1.jpg">
@@ -135,10 +167,10 @@
 			</section>
 
 
-			<section class="external-box all-sides" id="info"> <!--ID info is to apply a specific style to the link-to-more inside it-->
+			<section class="external-box all-sides" id="info"> <!--ID info is to apply a specific style to the link-to-more, col-4 and img inside it-->
 				<div class="row">
 
-					<div class="col-4 info-column">
+					<div class="col-4">
 						<div class="external-box">
 							<h2>Indonectetus facilis</h2>
 							<img class="img-responsive" alt="" src="images/info/300x280a.jpg">
@@ -149,7 +181,7 @@
 						
 					</div>
 
-					<div class="col-4 info-column">
+					<div class="col-4">
 						<div class="external-box">
 							<h2>Indonectetus facilis</h2>
 							<img class="img-responsive" alt="" src="images/info/300x280b.jpg">
@@ -160,7 +192,7 @@
 						
 					</div>
 
-					<div class="col-4 info-column">
+					<div class="col-4">
 						<div class="external-box">
 							<h2>Indonectetus facilis</h2>
 							<img class="img-responsive" alt="" src="images/info/300x280c.jpg">
@@ -209,7 +241,7 @@
 	<section id="social-block" >
 		<div class="external-box all-sides" >
 			<div class="row" >
-				<div class="col-4 table-data-format">
+				<div class="col-4">
 					<div class="external-box all-sides">
 						<h3>Newsletter</h3>
 						<div>
@@ -258,7 +290,7 @@
 					</div>
 					
 				</div>
-				<div class="col-4 table-data-format">
+				<div class="col-4">
 					<div class="external-box all-sides">
 						<h3>From The Blog</h3>
 						<div>
@@ -284,7 +316,7 @@
 						</div>
 					</div>	
 				</div>
-				<div class="col-4 table-data-format">
+				<div class="col-4">
 					<div class="external-box all-sides">
 						<h3>Latest From Twitter</h3>
 						<div>
@@ -315,9 +347,8 @@
 	</section>
 
 	<footer>
-		
 		<div class="external-box">
-			<div id="copyright-text">Copyright &copy; 2013 Fashionable - All Rights Reserved</div>
+			<div>Copyright &copy; 2013 Fashionable - All Rights Reserved</div>
 		</div>
 		
 	</footer>

@@ -5,10 +5,12 @@ body{
 }
 header{
 	background-color: white;
-	min-height: 100px;
+	height: 100px;
 }
 footer{
 	color:#4F4F4F;
+	margin-bottom: 10px;
+	font-size: 0.875em;
 }
 
 .external-box{ /* like container*/
@@ -17,18 +19,10 @@ footer{
 	margin-left: auto;
 	margin-right: auto;
 }
-/*---------CHECKED BOTTOM------------------*/
-
-
-
 .all-sides{
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-
-
-
-/*---------CHECKED TOP------------------*/
 .row{
 	width: 100%;
 	display: flex;
@@ -59,14 +53,12 @@ footer{
 .col-12{
 	width: calc(12/12 * 100%);
 }
-/*---------CHECKED BOTTOM------------------*/
-
-
-
 
 .img-responsive{
 	width: 100%;
 }
+
+/*---NEEDS TO BE CHECKED----*/
 .link-to-more{
 	color:#BD4B00;
 	text-decoration: none;
@@ -80,7 +72,7 @@ footer{
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
 }
-
+/*-----------------*/
 
 
 
@@ -89,20 +81,21 @@ footer{
 #title{
 	min-width: 180px;
 }
-#title-name{
+#title h1{
 	margin-bottom: 1%; 
 }
-#subtitle{
+#title h5{
 	margin-top: 1%;
 }
 .menu-nav{
-	margin-top: 2%;
+	/*margin-top: 2%;*/
 }
 nav{
 	border-radius: 10px;
 	float:right;
-	margin: 5px;
-	padding: 2%;
+	margin: 10px;
+	padding: 20px;
+	height: 30px;
 	background-color: black;
 	color: white;
 	text-transform: uppercase;
@@ -179,11 +172,15 @@ nav{
 	max-height: 400px;
 	overflow: hidden;
 }
+/*---------CHECKED BOTTOM------------------*/
+
 #slide-selector{
 	position: absolute;
     top: 1%;
     right: 1.5%;
 }
+
+/*---------CHECKED TOP------------------*/
 .slide-caption{
 	padding: 0px 10px;
 	position: absolute;
@@ -249,10 +246,14 @@ nav{
 
 
 /*------CHECKED TOP------*/
+#social-table > div{
+	display: inline-flex;
+	height: 38px;
+	width: 105px;
+}
 #social-table a{
 	text-decoration: none;
 	color:#707070;
-
 }
 #social-table i{
 	height: 16px;
@@ -261,20 +262,14 @@ nav{
 	color: white;
 	padding: 10px; /*inside icon distance*/
 	border-radius: 25px; /*circle aspect*/
-
 	display: inline-flex;
 	justify-content: center;
 
 }
-/*------CHECKED BOTTOM------*/
 .social-text{
 	display: inline-flex;
 }
-#social-table > div{
-	display: inline-flex;
-	height: 38px;
-	width: 105px;
-}
+/*------CHECKED BOTTOM------*/
 
 .social-paragraph{
 	font-size: 0.83em; 
@@ -300,15 +295,6 @@ nav{
 	margin-top: 1px;
 }
 /*---------------------------*/
-
-
-/*FOOTER STUFF*/
-/*---------------------------*/
-#copyright-text{
-	padding: 0 2% 2px;
-}
-/*---------------------------*/
-
 
 
 @media only screen and (max-width: 1035px){
@@ -404,23 +390,25 @@ nav{
 		width: 105px;
 	}
 
-	.info-column{
+	#info .col-4{
 		width:100%;		
 		display: block;
 	}
 
-	.info-column img{
+	#info img{
 		display: block;
 		width:50%;
 		margin: auto;
 	}
-	/*---------CHECKED BOTTOM------------------*/
-
-
 	#social-block .col-4{
 		width:100%;		
 		display: block;
 	}
+	footer > div{
+		display: flex;
+		justify-content: center;
+	}
+	/*---------CHECKED BOTTOM------------------*/
 }
 @media only screen and (max-width: 625px){
 	.slide-caption{
